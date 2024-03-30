@@ -2,9 +2,7 @@ import {pinJSONToIPFS} from './pinata.js'
 
 require('dotenv').config();
 const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY;
-console.log(process.env);
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
-console.log(alchemyKey);
 const web3 = createAlchemyWeb3('https://eth-sepolia.g.alchemy.com/v2/DPTIHY7rdVBOruJzjUdmni7wP6QEoex5');
 
 const contractABI = require('../contract-abi.json')
