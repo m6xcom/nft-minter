@@ -6,7 +6,7 @@ const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
 
 const contractABI = require('../contract-abi.json')
-const contractAddress = "0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE";
+const contractAddress = "0xb7bd39b82F37482f3eED99E4038D22265c6c1BA8";
 
 export const mintNFT = async (url, name, description) => {
     //error handling
