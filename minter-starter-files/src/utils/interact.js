@@ -6,7 +6,7 @@ const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
 
 const contractABI = require('../contract-abi.json')
-const contractAddress = "0xb7bd39b82F37482f3eED99E4038D22265c6c1BA8";
+const contractAddress = "0x1e2a29829b32aD3C1F2710D3Bdec84A8743Ee4F4";
 
 export const mintNFT = async (url, name, description) => {
     //error handling
@@ -50,7 +50,7 @@ export const mintNFT = async (url, name, description) => {
             });
         return {
             success: true,
-            status: "✅ Check out your transaction on Etherscan: https://goerli.etherscan.io/tx/" + txHash
+            status: "✅ Check out your transaction on explorer: https://explorer-sphinx.shardeum.org/transaction/" + txHash
         }
     } catch (error) {
         return {
